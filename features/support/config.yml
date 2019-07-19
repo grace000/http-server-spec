@@ -1,4 +1,4 @@
 server:
-  hostname: "erversay.herokuapp.com"
-  port: 443
-  protocol: "https"
+  hostname: "127.0.0.1"
+  port: 5000
+  protocol: "http"

@@ -7,7 +7,7 @@ class Spinach::Features::ReturningAMovedPermanentlyResponse < Spinach::FeatureSt
     expect(@response.status_code).to eq(301)
   end
 
-  step 'my response should have a location header with the "https://erversay.herokuapp.com/simple_get" URI' do
+  step 'my response should have a location header with the "http://0.0.0.0:5000/simple_get" URI' do
     expect(@response.location).to eq("#{PROTOCOL}://#{HOSTNAME}:#{PORT}/simple_get")
   end
 
